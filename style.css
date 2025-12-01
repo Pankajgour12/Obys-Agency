@@ -446,110 +446,135 @@ main {
   font-size: 0.7vw;
 }
 
-@media (max-width: 600px) {
-  #page1 {
-    background-color: #151414;
-    height: 60vh;
-    width: 100%;
-    margin-bottom: 5vw;
-    padding-top: 1px;
+#page5 {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  margin: 5vw 0;
+}
+#page5 h4 {
+  padding: 2vw 0;
+  font-size: 1.5vw;
+  font-family: serif;
+  font-weight: 500;
+  margin-left: 28%;
+}
+#page5 .elem {
+  white-space: nowrap;
+  overflow-x: hidden;
+  margin-bottom: 1vw;
+}
+#page5 .elem span {
+  font-style: italic;
+  font-family: "Silk serif", serif;
+  -webkit-text-stroke: 1px #ffffff;
+  color: transparent;
+}
+#page5 .elem h1 {
+  font-size: 6vw;
+  -webkit-text-stroke: 1px #ffffff;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-right: 16px;
+  color: transparent;
+  animation: marque 15s linear infinite;
+}
+#page5 .elem2 {
+  white-space: nowrap;
+  overflow-x: hidden;
+  margin-bottom: 1vw;
+}
+#page5 .elem2 span {
+  font-style: italic;
+  font-family: "Silk serif", serif;
+  -webkit-text-stroke: 1px #ffffff;
+  color: transparent;
+}
+#page5 .elem2 h1 {
+  font-size: 6vw;
+  -webkit-text-stroke: 1px #ffffff;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-right: 16px;
+  color: transparent;
+  transform: translateX(calc(-100% - 20px));
+  animation: marque 15s linear infinite reverse;
+}
+
+@keyframes marque {
+  from {
+    transform: translateX(0);
   }
-  #page1 #nav {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 3.3vw 4vw;
-    position: fixed;
-    top: 0;
-    width: 100%;
+  to {
+    transform: translateX(calc(-100% - 20px));
   }
-  #page1 #nav #nav-part2 {
-    display: none;
-  }
-  #page1 #nav #nav-part2 h4 {
-    font-size: 0.8vw;
-    font-weight: 500;
-  }
-  #page1 #nav svg {
-    scale: 0.8;
-  }
-  #page1 .hero:nth-child(2) {
-    margin-top: 25vh;
-  }
-  #page1 .hero {
-    width: 72%;
-    margin-left: 5%;
-    height: -moz-fit-content;
-    height: fit-content;
-    display: flex;
-    align-items: center;
-    z-index: 9999;
-    overflow: hidden;
-  }
-  #page1 .hero h1,
-  #page1 .hero h2 {
-    font-size: 10vw;
-    text-transform: uppercase;
-    line-height: 10vw;
-    font-weight: 600;
-    position: relative;
-  }
-  #page1 .hero h2 {
-    border-bottom: 0.4vw solid #fff;
-    padding-bottom: 0.4vw;
-  }
-  #page1 #hero1::before {
-    content: "01";
-    position: absolute;
-    font-size: 6vw;
-    font-weight: 100;
-    font-family: "silk-serif";
-    font-style: italic;
-    left: 6%;
-    top: 35%;
-  }
-  #page1 #hero3 {
-    z-index: 999;
-    position: relative;
-  }
-  #page2 {
-    height: 100vh;
-    width: 100%;
-    position: relative;
-    padding-top: 14vh;
-  }
-  #page2 #video-container {
-    height: 66vh;
-    width: 100%;
-    position: relative;
-    left: 1px;
-    background-image: url(https://obys.agency/wp-content/uploads/2022/11/Showreel-2022-preview-1.jpg);
-    background-size: cover;
-    background-position: center;
-  }
-  #page2 #video-container #video-cursor {
-    background-color: #ffa63d;
-    height: 20vw;
-    width: 20vw;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 999;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  #page2 #video-container #video-cursor i {
-    font-size: 5vw;
-    cursor: pointer;
-  }
-  #page2 video {
-    height: 100%;
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    opacity: 0;
-  }
+}
+#footer {
+  width: 100%;
+  background-color: #151515;
+  position: relative;
+  padding-left: 28vw;
+  padding-right: 2vw;
+  padding-bottom: 20vw;
+}
+#footer > h4 {
+  font-size: 1.1vw;
+  font-weight: 500;
+  padding-bottom: 4vw;
+}
+#footer h1 {
+  font-size: 7vw;
+  width: 60vw;
+  text-transform: uppercase;
+  position: relative;
+}
+#footer h1::before {
+  content: "04";
+  position: absolute;
+  font-size: 4vw;
+  font-family: "silk-serif";
+  font-style: italic;
+  font-weight: 100;
+  left: -20%;
+  top: 18%;
+}
+#footer .underline {
+  height: 0.2vh;
+  width: 100%;
+  background-color: #fff;
+  margin: 3vw 0;
+}
+#footer #footer-div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-right: 15vw;
+  padding-top: 4vw;
+  margin-bottom: 3vw;
+}
+#footer #footer-div .box {
+  width: 20vw;
+}
+#footer #footer-div h6 {
+  font-size: 1vw;
+  padding-bottom: 1.5vw;
+  font-weight: bold;
+  font-weight: 500;
+}
+#footer #footer-div h5 {
+  font-size: 1.4vw;
+  margin: 0.1vw 0;
+  font-weight: 500;
+}
+
+._canvas_container {
+  z-index: 999999 !important;
+  pointer-events: none;
+}
+
+.intro {
+  display: flex;
+  justify-content: space-between;
 }/*# sourceMappingURL=style.css.map */

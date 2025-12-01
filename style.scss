@@ -545,180 +545,197 @@ p{
 }
 }
 
-
-
-
-
-@media(max-width:600px){
-
- 
-#page1 {
-    background-color: #151414;
-    height: 60vh;
-    width: 100%;
-margin-bottom: 5vw;
-padding-top: 1px;
-    #nav {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        padding: 3.3vw 4vw;
-        position: fixed;
-        top: 0;
-        width: 100%;
-      
-
-        #nav-part2 {
-           
-            display: none;
-        }
-           #nav-part2 h4 {
-                font-size: 0.8vw;
-                font-weight: 500;
-            }
-        
-    }
-
-
-    #nav svg{
-scale: 0.8;
-
-
-    }
-    .hero:nth-child(2) {
-        margin-top: 25vh;
-    }
-
-    .hero {
-        // background-color: red;
-
-        width: 72%;
-        margin-left:5%;
-        height: fit-content;
-        //    background-color: red;
-        display: flex;
-        align-items: center;
-        // position: relative;
-        z-index: 9999;
-        overflow: hidden;
-
-
-        h1,
-        h2 {
-            font-size: 10vw;
-            text-transform: uppercase;
-            line-height: 10vw;
-            font-weight: 600;
-            position: relative;
-
-
-        }
-
-        h2 {
-            border-bottom: 0.4vw solid #fff;
-            padding-bottom: 0.4vw;
-            // transition: all ease 0.3s;
-        }
-
-       
-
-    }
-
-
-    #hero1::before {
-        content: "01";
-        position: absolute;
-        font-size: 6vw;
-        font-weight: 100;
-        font-family: 'silk-serif';
-        font-style: italic;
-        left: 6%;
-        top: 35%;
-
-
-
-
-
-
-
-
-    }
-
     
 
-    #hero3{
-       z-index: 999; 
-       position: relative;
-    }
-}
+       
+   
+    
 
+   
 
+   
+      
 
-
-
-#page2 {
-    height: 100vh;
+       
+   
+#page5 {
+    min-height: 100vh;
     width: 100%;
     position: relative;
-    padding-top: 14vh;
+margin: 5vw 0;
+h4{
+    padding: 2vw 0;
+    font-size: 1.5vw;
+    font-family: serif;
+    font-weight: 500;
+     margin-left: 28%;
+}
 
-    #video-container {
-        height: 66vh;
-        width: 100%;
-        position: relative;
-        left: 1px;
-        background-image: url(https://obys.agency/wp-content/uploads/2022/11/Showreel-2022-preview-1.jpg);
-        background-size: cover;
-        background-position: center;
+
+    .elem {
+        // background-color: goldenrod;
+        white-space: nowrap;
+        overflow-x: hidden;
+        margin-bottom: 1vw;
+
+        span {
+            font-style: italic;
+            font-family: "Silk serif", serif;
+            -webkit-text-stroke: 1px #ffffff;
+            color: transparent;
+        }
+
+
+        h1 {
+
+            font-size: 6vw;
+            -webkit-text-stroke: 1px #ffffff;
+            font-weight: 400;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-right: 16px;
+            color: transparent;
+
+            animation: marque 15s linear infinite;
+        }
+
 
     }
 
-      #video-container #video-cursor {
-            background-color: #ffa63d;
-            height: 20vw;
-            width: 20vw;
-            border-radius: 50%;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 999;
-            display: flex;
-            align-items: center;
-            justify-content: center;
 
-            i {
-                font-size: 5vw;
-                cursor: pointer;
-            }
+
+    .elem2 {
+
+        // background-color: goldenrod;
+        white-space: nowrap;
+        overflow-x: hidden;
+        margin-bottom: 1vw;
+
+        span {
+            font-style: italic;
+            font-family: "Silk serif", serif;
+            -webkit-text-stroke: 1px #ffffff;
+            color: transparent;
         }
 
-        video {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-            opacity: 0;
+        h1 {
+
+            font-size: 6vw;
+            -webkit-text-stroke: 1px #ffffff;
+            font-weight: 400;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-right: 16px;
+            color: transparent;
+            transform: translateX(calc(-100% - 20px));
+
+            animation: marque 15s linear infinite reverse;
+
+
         }
-    
+    }
 }
-   
 
+@keyframes marque {
+    from {
+        transform: translateX(0);
+    }
 
-
-
-
-} 
+    to {
+        transform: translateX(calc(-100% - 20px));
+    }
+}
+// 
+#footer {
+    // height: 90vh;
+    width: 100%;
     
+    background-color: #151515;
+    position: relative;
+    padding-left: 28vw;
+    padding-right: 2vw;
+padding-bottom: 20vw;
+    >h4 {
 
-   
-
-   
-      
-
+        font-size: 1.1vw;
+        font-weight: 500;
+        padding-bottom: 4vw;
        
+
+
+    }
+
+
+    h1 {
+        font-size: 7vw;
+        width: 60vw;
+        text-transform: uppercase;
+        // background-color: #3f7df4;
+        position: relative;
+    }
+
+    h1::before {
+        content: "04";
+        position: absolute;
+        font-size: 4vw;
+        font-family: 'silk-serif';
+        font-style: italic;
+        font-weight: 100;
+        left: -20%;
+        top: 18%;
+
+
+    }
+
+
+    .underline {
+        height: 0.2vh;
+        width: 100%;
+        background-color: #fff;
+        margin: 3vw 0;
+
+    }
+
+    #footer-div {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding-right: 15vw;
+        padding-top: 4vw;
+        margin-bottom: 3vw;
+
+
+        .box {
+            width: 20vw;
+        }
+
+        h6 {
+            font-size: 1vw;
+            padding-bottom: 1.5vw;
+            font-weight: bold;
+            font-weight: 500;
+        }
+
+        h5 {
+            font-size: 1.4vw;
+            margin: 0.1vw 0;
+            font-weight: 500;
+        }
        
+    }
 
-     
+}
+
+._canvas_container{
+    z-index: 999999 !important;
+    pointer-events: none;
+}
+
+.intro {
+
+    display: flex;
+    justify-content: space-between;
+}
 
 
-    
+

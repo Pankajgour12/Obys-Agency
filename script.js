@@ -120,7 +120,7 @@ function loadingAnimation() {
   );
 }
 function cursorAnimation() {
-  Shery.makeMagnet("#nav-part2 h4,.hero h2,.box h5");
+  Shery.makeMagnet("#nav-part2 h4,.hero h2,.box h5,.intro h5");
 
   var videoContainer = document.querySelector("#video-container");
   var video = document.querySelector("#video-container video");
