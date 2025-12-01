@@ -120,7 +120,29 @@ function loadingAnimation() {
   );
 }
 function cursorAnimation() {
-  Shery.makeMagnet("#nav-part2 h4,.hero h2,.box h5,.intro h5");
+  // Optimized Magnetic Effect (Replaces Shery.makeMagnet for performance)
+  document.querySelectorAll("#nav-part2 h4,.hero h2,.box h5,.intro h5").forEach(function(elem){
+      elem.addEventListener("mousemove",function(dets){
+          var bounding = elem.getBoundingClientRect()
+          var x = dets.clientX - bounding.left - bounding.width/2
+          var y = dets.clientY - bounding.top - bounding.height/2
+          
+          gsap.to(elem,{
+              x: x * 0.8,
+              y: y * 0.8,
+              duration: 0.3,
+              ease: "power2.out"
+          })
+      })
+      elem.addEventListener("mouseleave",function(dets){
+          gsap.to(elem,{
+              x:0,
+              y:0,
+              duration:0.3,
+              ease: "power2.out"
+          })
+      })
+  })
 
   var videoContainer = document.querySelector("#video-container");
   var video = document.querySelector("#video-container video");
