@@ -22,7 +22,6 @@ body {
   height: 100%;
   position: fixed;
   background-color: #0b0b0b;
-  display: none;
   z-index: 999999;
   display: block;
   padding: 25vh 10vw;
@@ -584,7 +583,7 @@ main {
   #page1 {
     height: 100%;
     width: 100%;
-    margin-bottom: 5vw;
+    margin-bottom: 1vw;
   }
   #page1 #nav {
     display: flex;
@@ -600,7 +599,7 @@ main {
     margin-top: 18vh;
   }
   #page1 .hero {
-    margin-left: 8%;
+    margin-left: 10%;
   }
   #page1 .hero h1,
   #page1 .hero h2 {
@@ -628,7 +627,7 @@ main {
     font-family: "silk-serif";
     font-style: italic;
     left: 1%;
-    top: 55%;
+    top: 57%;
   }
   #page1 #flag {
     height: 30vw;
@@ -641,5 +640,41 @@ main {
   #page1 #hero3 {
     z-index: 999;
     position: relative;
+  }
+  #page2 {
+    height: 100vh;
+    width: 100%;
+    padding-top: 5vh;
+    position: relative;
+  }
+  #page2 #video-container {
+    height: 66vh;
+    width: 100vw;
+    position: relative;
+    left: 0.1%;
+  }
+  #page2 #video-container #video-cursor {
+    background-color: #ffa63d;
+    height: 15vw;
+    width: 15vw;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #page2 #video-container #video-cursor i {
+    font-size: 3vw;
+    cursor: pointer;
+  }
+  #page2 #video-container video {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    opacity: 0;
   }
 }/*# sourceMappingURL=style.css.map */

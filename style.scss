@@ -28,7 +28,7 @@ body {
     height: 100%;
     position: fixed;
     background-color: #0b0b0b;
-    display: none; //isko hatana hai
+    // display: none; //isko hatana hai
     z-index: 999999;
     display: block;
 
@@ -743,25 +743,22 @@ padding-bottom: 20vw;
 
 
 @media screen and (max-width: 768px){
+
+
+
     
     #page1 {
         height: 100%;
-    width: 100%;
+     width: 100%;
   
-    margin-bottom: 5vw;
+    margin-bottom: 1vw;
     #nav {
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 2vw 5vw;
 
-        #nav-part2 {
-            // display: flex;
-            // align-items: center;
-            // justify-content: center;
-            // gap: 3vw;
-
-        }
+      
            #nav-part2 h4 {
                 font-size: 3vw;
                 font-weight: 500;
@@ -775,7 +772,7 @@ padding-bottom: 20vw;
 
     .hero {
         
-        margin-left: 8%;
+        margin-left: 10%;
       
 
         h1,
@@ -814,7 +811,7 @@ padding-bottom: 20vw;
         font-family: 'silk-serif';
         font-style: italic;
         left: 1%;
-        top: 55%;
+        top: 57%;
 
 
 
@@ -840,6 +837,51 @@ padding-bottom: 20vw;
     #hero3{
        z-index: 999; 
        position: relative;
+    }
+}
+
+
+
+#page2 {
+    height: 100vh;
+    width: 100%;
+    padding-top: 5vh;
+    position: relative;
+    
+
+    #video-container {
+        height: 66vh;
+        width: 100vw;
+        position: relative;
+        left: 0.1%;
+       
+        
+
+        #video-cursor {
+            background-color: #ffa63d;
+            height: 15vw;
+            width: 15vw;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            i {
+                font-size: 3vw;
+                cursor: pointer;
+            }
+        }
+
+        video {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            opacity: 0;
+        }
     }
 }
 
