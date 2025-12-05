@@ -258,7 +258,7 @@ function mouseFollower() {
 }
 
 locomotiveAnimation();
-loadingAnimation();
+/* loadingAnimation(); */
 sheryAnimation();
 cursorAnimation();
 mouseFollower();
