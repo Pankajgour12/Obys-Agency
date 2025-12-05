@@ -638,7 +638,7 @@ main {
     position: relative;
   }
   #page2 {
-    height: 80vh;
+    height: 66vh;
     width: 100%;
     padding-top: 5vh;
     position: relative;
@@ -651,19 +651,19 @@ main {
   }
   #page2 #video-container #video-cursor {
     background-color: #ffa63d;
-    height: 15vw;
-    width: 15vw;
+    height: 25vw;
+    width: 25vw;
     border-radius: 50%;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 45%;
+    left: 45%;
     z-index: 999;
     display: flex;
     align-items: center;
     justify-content: center;
   }
   #page2 #video-container #video-cursor i {
-    font-size: 3vw;
+    font-size: 7vw;
     cursor: pointer;
   }
   #page2 #video-container video {
