@@ -161,7 +161,7 @@ main {
   font-family: "silk-serif";
   font-style: italic;
   left: 21%;
-  top: 32%;
+  top: 3%;
 }
 #page1 #flag {
   height: 22vw;
@@ -395,6 +395,7 @@ main {
   font-style: italic;
   font-weight: 100;
 }
+
 
 .line1 {
   height: 0.5vh;
@@ -686,6 +687,11 @@ main {
        object-fit: cover;
     opacity: 0;
   }
+  #page3 {
+    padding: 0;
+    margin: 0;
+    padding-top: 10vh;
+  }
   #page3 h1 {
     font-size: 10vw;
     text-transform: uppercase;
@@ -701,14 +707,14 @@ main {
     margin-left: 2vw;
   }
   #page3 #image-div-container {
-    padding: 1rem;
+    padding: 0.5rem;
     position: relative;
     overflow-y: hidden;
     gap: 10vh;
   }
   #page3 #image-div-container .image-div {
-    height: 100vw;
-    width: 100vw;
+    height: 80vw;
+    width: 80vw;
     position: relative;
     overflow: hidden;
     overflow-y: hidden;
@@ -724,7 +730,6 @@ main {
   #page3 #image-div-container .image-div:nth-child(n) {
     height: 100vw;
     width: 100vw;
-    overflow-y: hidden;
   }
   #page3-circle1 {
     height: 80vw;
@@ -761,4 +766,116 @@ main {
   .circle1-in p {
     font-size: 5vw;
   }
+
+
+
+ #page4 {
+    padding: 0;
+    margin: 0;
+    padding-top: 10vh;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  #page4 #content {
+    width: 100%;
+    margin: 0;
+  }
+  #page4 #content h1 {
+    font-size: 10vw;
+  }
+  #page4 #content h1::before {
+    display: none;
+  }
+  #page4 #content > p {
+    font-size: 5vw;
+    width: 100%;
+    margin: 4vw 0;
+  }
+  #page4 #page4-flex {
+    flex-direction: column;
+  }
+  #page4 #page4-flex #img1 {
+    width: 100%;
+  }
+  #page4 #page4-flex p {
+    width: 100%;
+    margin-top: 5vh;
+    font-size: 3vw;
+  }
+  #page4 #blue-div {
+    width: 100%;
+    margin: 0;
+    margin-top: 5vh;
+  }
+  #page4 #blue-div .blue-elem h4 {
+    font-size: 5vw;
+  }
+  #page4 #blue-div .blue-elem p {
+    font-size: 3vw;
+  }
+
+
+
+
+  #page5 {
+    margin: 10vw 0;
+    min-height: 80%;
+    
+  }
+  #page5 h4 {
+    margin-left: 3vw;
+    font-size: 5vw;
+    padding-bottom: 4vh;
+  }
+  #page5 .elem h1 {
+    font-size: 10vw;
+
+  }
+  #page5 .elem2 h1 {
+    font-size: 10vw;
+  }
+  #footer {
+    padding: 10vw 5vw;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  #footer h1 {
+    font-size: 10vw;
+    width: 100%;
+  }
+  #footer h1::before {
+    display: none;
+  }
+  #footer #footer-div {
+    flex-direction: column;
+    gap: 5vh;
+  }
+  #footer #footer-div .box {
+    width: 100%;
+  }
+  #footer #footer-div .box h6 {
+    font-size: 5vw;
+  }
+  #footer #footer-div .box h5 {
+    font-size: 4vw;
+  }
+  #footer .intro h4 {
+    font-size: 3vw;
+  }
+  #footer .intro h5 {
+    font-size: 3vw;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
 }/*# sourceMappingURL=style.css.map */
