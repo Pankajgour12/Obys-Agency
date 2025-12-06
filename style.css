@@ -277,6 +277,14 @@ main {
   height: 30vw;
   width: 20vw;
 }
+#page3 #image-div-container .image-div:nth-child(6) {
+  height: 30vw;
+  width: 20vw;
+}
+#page3 #image-div-container .image-div:nth-child(8) {
+  height: 30vw;
+  width: 20vw;
+}
 
 #page3-circle1 {
   height: 23vw;
@@ -584,6 +592,9 @@ main {
 }
 
 @media screen and (max-width: 768px) {
+  main {
+    overflow-y: hidden;
+  }
   #page1 {
     height: 100%;
     width: 100%;
@@ -642,12 +653,14 @@ main {
     width: 100%;
     padding-top: 5vh;
     position: relative;
+    overflow-y: hidden;
   }
   #page2 #video-container {
     height: 66vh;
     width: 100vw;
     position: relative;
     left: 0.1%;
+    overflow-y: hidden;
   }
   #page2 #video-container #video-cursor {
     background-color: #ffa63d;
@@ -688,13 +701,9 @@ main {
     margin-left: 2vw;
   }
   #page3 #image-div-container {
-    padding: 1vw;
+    padding: 1rem;
     position: relative;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
-    flex-wrap: wrap;
+    overflow-y: hidden;
     gap: 10vh;
   }
   #page3 #image-div-container .image-div {
@@ -702,7 +711,7 @@ main {
     width: 100vw;
     position: relative;
     overflow: hidden;
-    flex-shrink: 0;
+    overflow-y: hidden;
   }
   #page3 #image-div-container .image-div img {
     height: 100%;
@@ -712,9 +721,10 @@ main {
     -o-object-position: center;
        object-position: center;
   }
-  #page3 #image-div-container .image-div:nth-child(1) {
+  #page3 #image-div-container .image-div:nth-child(n) {
     height: 100vw;
     width: 100vw;
+    overflow-y: hidden;
   }
   #page3-circle1 {
     height: 80vw;
@@ -732,5 +742,23 @@ main {
   }
   #page3-circle2 svg {
     width: 35%;
+  }
+  .circle1-in {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease 0.5s;
+    scale: 0;
+    border-radius: 50%;
+  }
+  .circle1-in p {
+    font-size: 5vw;
   }
 }/*# sourceMappingURL=style.css.map */

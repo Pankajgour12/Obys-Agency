@@ -353,6 +353,14 @@ main {
             height: 30vw;
             width: 20vw;
         }
+         .image-div:nth-child(6){
+            height: 30vw;
+            width: 20vw;
+        }
+        .image-div:nth-child(8){
+            height: 30vw;
+            width: 20vw;
+        }
     }
 
 }
@@ -773,7 +781,9 @@ padding-bottom: 20vw;
 
 @media screen and (max-width: 768px){
 
-
+main{
+    overflow-y: hidden;
+}
 
     
     #page1 {
@@ -869,6 +879,7 @@ padding-bottom: 20vw;
     width: 100%;
     padding-top: 5vh;
     position: relative;
+    overflow-y: hidden;
 
     #video-container {
         height: 66vh;
@@ -876,7 +887,7 @@ padding-bottom: 20vw;
         position: relative;
         left: 0.1%;
        
-        
+        overflow-y: hidden;
 
         #video-cursor {
             background-color: #ffa63d;
@@ -939,13 +950,10 @@ padding-bottom: 20vw;
 
     #image-div-container {
         // background-color: red;
-        padding: 1vw;
+        padding: 1rem;
         position: relative;
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-        flex-direction: column;
-        flex-wrap: wrap;
+        overflow-y: hidden;
+      
        gap:10vh;
 
         .image-div {
@@ -953,9 +961,7 @@ padding-bottom: 20vw;
             width: 100vw;
             position: relative;
             overflow: hidden;
-            // background-color: #3f7df4;
-            flex-shrink: 0;
-            // background-color: #00caf3;
+            overflow-y: hidden;
 
             img {
                 height: 100%;
@@ -964,9 +970,10 @@ padding-bottom: 20vw;
                 object-position: center;
             }
         }
-        .image-div:nth-child(1){
+        .image-div:nth-child(n){
             height: 100vw;
             width: 100vw;
+            overflow-y: hidden;
         }
     }
 
@@ -1004,6 +1011,30 @@ svg{
 
 }
 
+.circle1-in{
+    height: 100%;
+    width: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+  background-color: #ffffff;
+  color:#000;
+
+display: flex;
+align-items: center;
+justify-content: center;
+transition: all ease 0.5s;
+
+scale: 0;
+border-radius: 50%;
+    
+p{
+    font-size:5vw;
+ 
+
+
+}
+}
 
 
 
